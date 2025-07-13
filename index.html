@@ -2,21 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Malla Interactiva</title>
+  <title>Malla Interactiva con Correlativas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Malla de la Carrera</h1>
+  <h1>Malla de Carrera</h1>
   <div id="malla">
-    <!-- Acá van las materias -->
-    <div class="materia" onclick="mostrarInfo('Matemática I')">Matemática I</div>
-    <div class="materia" onclick="mostrarInfo('Programación I')">Programación I</div>
-    <div class="materia" onclick="mostrarInfo('Álgebra')">Álgebra</div>
+    <div class="materia habilitada" id="Matemática I" onclick="aprobarMateria('Matemática I')">Matemática I</div>
+    <div class="materia bloqueada" id="Álgebra" onclick="aprobarMateria('Álgebra')">Álgebra</div>
+    <div class="materia bloqueada" id="Física" onclick="aprobarMateria('Física')">Física</div>
   </div>
-
-  <div id="infoMateria"></div>
-
   <script src="script.js"></script>
 </body>
 </html>
-Primer index
+
